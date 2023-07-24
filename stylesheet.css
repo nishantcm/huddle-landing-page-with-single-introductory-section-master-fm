@@ -1,19 +1,154 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
 .page-wraper {
     width: 375px;
-    height: 100vh;
+    height: 820px;
     margin: auto;
     background-color: hsl(257, 40%, 49%);
 }
 .container {
     width: 375px;
-    height: 900px;
+    height: 400px;
     background-image: url(bg-mobile.svg);
-    background-size: 375px 300px;
     background-repeat: no-repeat;
 }
-.logo {
-    padding: 25px 0 0 25px;
+.content {
+    position: relative;
+}
+.logo img {
+    width: 150px;
+    padding: 35px 0 0 25px;
 }
 .image {
-    padding: 45px 25px 50px 25px;
+    width: 300px;
+    height: 210px;
+    background-image: url(illustration-mockups.svg);
+    background-size: 300px 220px;
+    background-repeat: no-repeat;
+    margin: 60px 35px 50px 35px;
+    
+}
+.head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 10px 45px 20px 45px;
+    line-height: 35px;
+}
+.para {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 0 35px 30px 35px;
+    line-height: 25px;
+}
+button {
+    font-size: 12px;
+    padding: 15px 75px 15px 75px;
+    margin: 0 90px 60px 90px;
+    color: hsl(257, 40%, 49%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    border: none;
+    
+}
+.icon {
+    position: absolute;
+    left: 125px;
+}
+#insta, #facebook, #twitter {
+    border-radius: 100%;
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(257, 40%, 49%);
+    padding: 12px 7px;
+    margin-left: 10px;
+}
+#facebook {
+    padding: 12px 9px;
+}
+#insta {
+    padding: 12px 8px;
+}
+
+@media (min-width: 1440px) {
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-wraper {
+       display: flex;
+       width: 1440px; 
+       height: 800px;
+       position: relative;
+    }
+
+    .container {
+        width: 1440px;
+        height: 800px;
+        background-image: url(bg-desktop.svg);
+        background-size: 1318px 800px;
+        
+    }
+    .content {
+        position: absolute;
+    }
+    .logo img {
+        width: 200px;
+        padding: 50px 0 0 80px;
+        
+    }
+    .image {
+        width: 709px;
+        height: 506px;
+        background-image: url(illustration-mockups.svg);
+        background-size: 709px 506px;
+        margin: 90px 40px 0 80px;
+        
+    }
+    .head {
+        font-size: 40px;
+        text-align: left;
+        padding: 245px 150px 20px 830px;
+        line-height: 55px;
+    }
+    .para {
+        text-align: left;
+        padding: 0px 150px 20px 830px;
+        line-height: 25px;
+    }
+    button {
+        font-size: 15px;
+        padding: 15px 60px 15px 60px;
+        margin: 0px 150px 20px 830px;
+        line-height: 25px;
+       
+    }
+    .icon {
+        margin: 180px 50px 20px 1130px;
+    }
+    
+}
+@media (min-width: 1440px),(min-width: 375px){
+    button:active{
+        background-color: hsl(300, 69%, 71%);
+    }
+    #facebook:active {
+        background-color: hsl(300, 69%, 71%);
+    }
+    #twitter:active {
+        background-color: hsl(300, 69%, 71%);
+    }
+    #insta:active {
+        background-color: hsl(300, 69%, 71%);
+    }
 }
